@@ -1,0 +1,4 @@
+podman run --rm -it \
+    --env-file ./config/secrets.env \
+    -v ./config:/config:ro \
+    deployment:arm64 bash
