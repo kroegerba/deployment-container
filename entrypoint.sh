@@ -17,7 +17,8 @@ json() {
 if [ -f "$CONFIG" ]; then
   export GIT_URL="$(json url)"
   export GIT_BRANCH="$(json branch || echo master)"
-  export DEST="$(json dest || echo /destination)"
+  echo "git url: $GIT_URL"
+  echo "git branch: $GIT_BRANCH"
 
   git clone --depth=1 --branch $GIT_BRANCH $GIT_URL src
 

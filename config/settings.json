@@ -1,5 +1,4 @@
 {
   "url": "https://github.com/kroegerba/deployment-container.git",
-  "branch": "master",
-  "dest": "/destination"
+  "branch": "master"
 }
