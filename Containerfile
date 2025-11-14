@@ -12,3 +12,4 @@ RUN chmod +x /work/entrypoint.sh
 USER builder
 
 ENTRYPOINT ["/work/entrypoint.sh"]
+CMD ["bash"]
