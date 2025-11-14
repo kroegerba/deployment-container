@@ -20,6 +20,8 @@ if [ -f "$CONFIG" ]; then
   export DEST="$(json dest || echo /destination)"
 
   git clone --depth=1 --branch $GIT_BRANCH $GIT_URL src
+
+  echo "great success" > /destination/fictitious_build_result
 else
   echo "⚠️   no settings.json found"
 fi
